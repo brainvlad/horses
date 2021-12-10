@@ -1,0 +1,17 @@
+.banner {
+    width: 100%;
+
+    text-align: left;
+    padding: 150px 0 0 100px;
+    color: #fefefe;
+    font-size: 72px;
+
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;
+    background-image: url(../img/objects/banner.jpg);            
+    background-color: #262b2f;
+    
+    margin-bottom: 50px;
+}
