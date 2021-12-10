@@ -1,0 +1,39 @@
+.banner {
+    width: 100%;
+
+    text-align: left;
+    padding: 150px 0 0 100px;
+    color: #fefefe;
+    font-size: 72px;
+
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;
+    background-image: url(../img/animals/banner.jpg);            
+    background-color: #262b2f;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.gallery__item {
+    position: relative;
+    flex: 1;
+    height: 750px;
+    z-index: 1;
+    transition: all .3s;
+    cursor: pointer;
+    min-width: 600px;
+}
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery__item:active {
+    z-index: 2;
+    transform: scale(1.05);
+}
