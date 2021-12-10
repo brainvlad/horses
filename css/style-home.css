@@ -87,6 +87,7 @@
 }
 .about__info-2 {
     background-color: #332928;
+    color: #fefefe;
     flex: 5;
     align-items: flex-end;
 }
