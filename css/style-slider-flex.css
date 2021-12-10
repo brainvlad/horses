@@ -1,0 +1,37 @@
+.slider-flex {
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.slide{
+    height: 80vh;
+    cursor: pointer;
+    color: #fefefe;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.7;
+}
+
+.slide > h3{
+    position: absolute;
+    font-size: 24px;
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+}
+
+.slide.active{
+    flex: 10;
+    opacity: 1;
+    filter: drop-shadow(0px 4px 64px rgba(255, 255, 255, 0.11));
+}
+
+.slide.active > h3 {
+    opacity: 1;
+    transition: opacity 0.2s ease-in 0.4s;
+}
