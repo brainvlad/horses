@@ -17,6 +17,11 @@ body {
   height: 100vh;
   min-height: 600px;
 }
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
 
 
 
