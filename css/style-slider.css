@@ -43,3 +43,10 @@
 .slider__prev:active {
     opacity: 1;
 }
+
+@media (max-width: 712px) {
+    .slider__item {
+        width: 450px;
+        height: 620px;
+    }
+}

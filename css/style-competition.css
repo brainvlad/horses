@@ -33,3 +33,17 @@
     height: 100%;
     object-fit: cover;
 }
+.gallery-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-top .gallery__item:last-child {
+    height: 400px;
+}
+
+@media (max-width: 512px) {
+    .banner {
+        padding: 150px 0 0 20px;
+        font-size: 42px;
+    }
+}

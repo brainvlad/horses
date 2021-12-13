@@ -1,11 +1,13 @@
 .slider-flex {
-    width: 100%;
+    width: 100vw;
+    overflow: hidden;
     display: flex;
+    /* flex-direction: column; */
     margin-bottom: 50px;
 }
 
 .slide{
-    height: 80vh;
+    height: 600px;
     cursor: pointer;
     color: #fefefe;
     flex: 1;
@@ -14,7 +16,7 @@
     background-repeat: no-repeat;
     position: relative;
     transition: all 0.5s ease-in-out;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .slide > h3{
@@ -23,15 +25,28 @@
     bottom: 30px;
     left: 30px;
     opacity: 0;
+    width: 0;
 }
 
-.slide.active{
+.slide.active {
     flex: 10;
     opacity: 1;
     filter: drop-shadow(0px 4px 64px rgba(255, 255, 255, 0.11));
 }
 
 .slide.active > h3 {
+    width: initial;
     opacity: 1;
     transition: opacity 0.2s ease-in 0.4s;
 }
+
+@media (max-width: 512px) {
+    .slide > h3{
+        font-size: 12px;
+        left: 20px;
+    }
+    .slide.active {
+        flex: 12;
+    }
+}
+
