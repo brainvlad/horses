@@ -1,0 +1,124 @@
+.menu a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.menu li {
+    list-style: none;
+    position: relative;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.menu {
+    height: fit-content;
+    font-size: 18px;
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(34, 60, 80, 0.1);
+    -moz-box-shadow: 0px 5px 18px 0px rgba(34, 60, 80, 0.1);
+    box-shadow: 0px 5px 18px 0px rgba(34, 60, 80, 0.1);
+    
+    display: flex;
+    justify-content: flex-end;
+    
+    background-color: #1a1a1a;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.menu__scrolling {
+    transform: translateY(-70px);
+}
+
+.menu__list {
+    margin-right: 5%;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    background-color: #1a1a1a;
+}
+
+.menu__list > li {
+    /*text-align: center;*/
+    height: fit-content;
+    box-sizing: border-box;
+    transition: 0.15s;
+}
+
+.menu__list > li:hover .sub-menu__list {
+    /*display: block;*/
+    opacity: initial;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.menu__list > li:hover {
+    background-color: #2a2a2a;
+}
+
+.menu__link {
+    box-sizing: border-box;
+    color: #101010;
+    padding: 0 70px;
+    line-height: 70px;
+}
+
+
+
+.sub-menu__list > li {
+    background-color: #1a1a1a;
+    transition: .15s;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.sub-menu__list > li:hover {
+    background-color: #2a2a2a;
+}
+
+.sub-menu__list {
+    /*display: none;*/
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    position: absolute;
+    right: 0;
+    top: 51px;
+    padding: 20px 0 0 0;
+    width: inherit;
+    height: fit-content;
+    box-sizing: border-box;
+    transition: .3s;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    -webkit-box-shadow: 0px 33px 25px -7px rgba(34, 60, 80, 0.1);
+    -moz-box-shadow: 0px 33px 25px -7px rgba(34, 60, 80, 0.1);
+    box-shadow: 0px 33px 25px -7px rgba(34, 60, 80, 0.1);
+}
+.sub-menu__list > li {
+    width: 100%;
+    display: flex;
+}
+.sub-menu__link {
+    width: 100%;
+    color: #101010;
+    padding: 10px 50px;
+    line-height: 1.32em;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sub-menu__link:hover {
+    background-color: #2a2a2a;
+}
+
+@media (max-width: 450px) {
+    .menu__link {
+        padding: 0 30px;
+        line-height: 70px;
+    }
+}

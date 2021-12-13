@@ -7,9 +7,12 @@
     <title>Object shooting</title>
 
     <!-- include css -->
-    <link rel="stylesheet" href="css/style-header.css">
-    <link rel="stylesheet" href="css/style-object.css">
-    <link rel="stylesheet" href="css/style-footer.css">
+    <link rel="stylesheet" media="" type="text/css" href="css/style-header.css" id="header-ligth">
+    <link rel="stylesheet" media="none" type="text/css" href="css/dark-style-header.css" id="header-dark">
+    <link rel="stylesheet" media="" type="text/css" href="css/style-object.css" id="object-light">
+    <link rel="stylesheet" media="none" type="text/css" href="css/dark-style-object.css" id="object-dark">
+    <link rel="stylesheet" media="" type="text/css" href="css/style-footer.css" id="footer-light">
+    <link rel="stylesheet" media="none" type="text/css" href="css/dark-style-footer.css" id="footer-dark">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.css">
@@ -32,9 +35,13 @@
 
     <script src="js/top-menu.js" defer></script>
     <script src="js/slider.js" defer></script>
+    <script src="js/theme.js" defer></script>
 </head>
 
 <body>
+
+    <div class="theme-button" id="theme-button"></div>
+
     <nav class="menu">
         <ul class="menu__list">
             <li>

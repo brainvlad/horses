@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -7,12 +8,15 @@
     <title>Home</title>
 
     <!-- include css -->
-    <link rel="stylesheet" href="css/style-header.css">
-    <link rel="stylesheet" href="css/style-home.css">
-    <link rel="stylesheet" href="css/style-footer.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" media="" type="text/css" href="css/style-header.css" id="header-ligth">
+    <link rel="stylesheet" media="none" type="text/css" href="css/dark-style-header.css" id="header-dark">
+    <link rel="stylesheet" media="" type="text/css" href="css/style-home.css" id="home-light">
+    <link rel="stylesheet" media="none" type="text/css" href="css/dark-style-home.css" id="home-dark">
+    <link rel="stylesheet" media="" type="text/css" href="css/style-footer.css" id="footer-light">
+    <link rel="stylesheet" media="none" type="text/css" href="css/dark-style-footer.css" id="footer-dark">
+    <link rel="stylesheet" media="" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" media="" type="text/css" href="css/all.css">
+    <link rel="stylesheet" media="" type="text/css" href="css/fontawesome.css">
 
     <!-- favicon includes -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -31,9 +35,13 @@
 
     <script src="js/top-menu.js" defer></script>
     <script src="js/square-gallery.js" defer></script>
+    <script src="js/theme.js" defer></script>
 </head>
 
 <body>
+
+    <div class="theme-button" id="theme-button"></div>
+
     <nav class="menu">
         <ul class="menu__list">
             <li>
@@ -152,7 +160,6 @@
             <div class=""></div>
         </div>
     </footer>
-
 </body>
 
 </html>
